@@ -27,7 +27,7 @@ public class ConditionalSync extends BaseClass {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("xpath")));
 	}
 	
-	
+	/**
 	public static void fluentWait(final String xpathofelement)
 	{
 	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
@@ -41,5 +41,5 @@ public class ConditionalSync extends BaseClass {
 				}
 			}
 			);
-	}
+	}**/
 }

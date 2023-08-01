@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.256 sec - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 7.593 sec <<< FAILURE! - in TestSuite
+setup(TestLayer.TestCogmento_one)  Time elapsed: 7.448 sec  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:53620/devtools/browser/c9ad1948-654e-49ab-a58b-a69b2046fbb5
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SWAPNIL', ip: '192.168.1.102', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+	at TestLayer.TestCogmento_one.setup(TestCogmento_one.java:18)
+

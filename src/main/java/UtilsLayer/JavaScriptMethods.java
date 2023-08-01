@@ -66,7 +66,7 @@ public class JavaScriptMethods extends BaseClass {
 	public void handleDropDown(WebElement namelocator,String value)
 	{
 		js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].getElementByName('"+namelocator+"').value=''"+value+";");
+		js.executeScript("arguments[0].getElementByName('"+namelocator+"').value='"+value+"';");
 	}
 	public void scrollDownByPixcel(int pixcel)
 	{

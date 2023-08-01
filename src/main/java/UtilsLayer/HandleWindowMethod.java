@@ -7,7 +7,7 @@ import java.util.Set;
 import BaseLayer.BaseClass;
 
 public class HandleWindowMethod extends BaseClass {
-	protected Set<String> ls;
+	protected static Set<String> ls;
 	public static String handleSingleWindow()
 	{
 		return driver.getWindowHandle();
@@ -17,7 +17,7 @@ public class HandleWindowMethod extends BaseClass {
 		return driver.getWindowHandles();
 	}
 	
-	public  ArrayList<String> handleWindows() 
+	public static  ArrayList<String> handleWindows() 
 	{
 		ls=driver.getWindowHandles();
 		Iterator<String> it = ls.iterator();
@@ -33,9 +33,9 @@ public class HandleWindowMethod extends BaseClass {
 	{
 		return driver.getWindowHandles().size();
 	}
-	public void switchTowindow(int windowno)
+	public static void switchTowindow(int windowno)
 	{
 		handleWindows();
-		driver.switchTo().window(handleWindows().get(windowno));
+		driver.switchTo().window(handleWindows().get(windowno).toString());
 	}
 }

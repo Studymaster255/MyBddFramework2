@@ -62,4 +62,8 @@ public class ActionClassMethods extends BaseClass {
 			act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).build().perform();
 		}
 	}
+	public static void refresh()
+	{
+		act.sendKeys(Keys.F5).build().perform();
+	}
 }
